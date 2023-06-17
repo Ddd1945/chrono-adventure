@@ -10,7 +10,7 @@ Run command npm start to run local webpack-dev-server with livereload and autoco
 # DEPLOYMENT
 Run command npm run build to build current application
 
-SPECIAL THANKS TO:
+# SPECIAL THANKS TO:
 
 * PetricakeGames for tileset and spritesheet - https://petricakegames.itch.io/
 
