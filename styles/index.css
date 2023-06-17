@@ -1,0 +1,21 @@
+@font-face {
+	font-family: Flexi_IBM_VGA_True;
+	src: url('../assets/fonts/Flexi_IBM_VGA_True.ttf');
+}
+
+html {
+	width: 100vw;
+	height: 100vh;
+	background: black;
+	display: flex;
+	justify-content: center;
+}
+
+canvas {
+	border: 5px solid pink;
+}
+
+body {
+	margin: auto;
+	font-family: sans-serif;
+}
