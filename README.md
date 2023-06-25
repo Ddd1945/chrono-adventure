@@ -2,13 +2,13 @@
 Video Game that was created with phaser JS, HTML, CSS, Tiled. 
 
 # INSTALLATION
-Run command npm install to install all required dependencies.
+Run command <i>npm install</i> to install all required dependencies.
 
 # DEVELOPMENT 
-Run command npm start to run local webpack-dev-server with livereload and autocompile on localhost
+Run command <i>npm start</i> to run local webpack-dev-server with livereload and autocompile on localhost
 
 # DEPLOYMENT
-Run command npm run build to build current application
+Run command <i>npm run build</i> to build current application
 
 # SPECIAL THANKS TO:
 
