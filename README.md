@@ -55,4 +55,4 @@ Run command npm run build to build current application
 * robotmeadows for soundtrack- https://robotmeadows.itch.io/
 
 
-P.S. Please, support me - https://ko-fi.com/dendyy1945, subscribe, and give a star to this project if it was helpful for you.
+### P.S. Please, support me - https://ko-fi.com/dendyy1945, subscribe, and give a star to this project if it was helpful for you.
