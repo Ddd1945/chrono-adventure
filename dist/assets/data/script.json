@@ -1,0 +1,20 @@
+{
+    "_description": "The script object contains a list of dialog responses for game characters. Top level properties reference the character doing the speaking. Child properties are the key name of the object spoken in response to.",
+    "astronaut": {
+        "arriving": "Argh... I'm not too fond of this technology that's leaving after me those time-dimensional tracks. It's better not to bump into it.",
+        "secondLevelThought": "Well, at the very least, I was able to be sent here only because of this technology. I need to complete my mission: I need to collect all data from this alien spaceship!",
+        "secondLevelHint": "I shouldn't forget to use acceleration by pressing the 'SPACE' button on my spacesuit when I'm moving.",
+        "key": "It's a cipher: 1 2 3 4 9 * * * *. Mechanisms range from 0 to 9. I need to decipher it and enter the last 4 numbers from the sequence!",
+        "clue": "Hm... It's an answer written here! It says 2531!",
+        "morse": "Seems like it's a Morse Code my comrade is sending to me to help me leave that place!",
+        "lockedRoom": "It's a secret way here. I need to activate some mechanism to open it!",
+        "transitionalThoughtOne": "Wait... What's happening?",
+        "transitionalThoughtTwo": "What is this place?",
+        "transitionalThoughtThree": "How am I able to walk in outer space?!",
+        "transitionalThoughtFour": "Why doesn't it affect me if I'm in outer space?"
+    },
+    "dude": {
+        "bed": "So, that was a dream, eh?",
+        "books": "It's unfortunate that books are not in fashion nowadays."
+    }
+}
