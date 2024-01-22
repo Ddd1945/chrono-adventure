@@ -43,7 +43,6 @@ export class BootScene extends Phaser.Scene {
 		this.load.image('notebookExitButtonSelected', ('assets/images/computer/notebook-exit-button-selected.png'));
 		this.load.image('city', ('assets/images/credit/city.png'));
 		this.load.image('car-0', ('assets/images/credit/car-zero.png'));
-		this.load.image('car-1', ('assets/images/credit/car-one.png'));
 		this.load.image('car-2', ('assets/images/credit/car-two.png'));
 		this.load.image('car-3', ('assets/images/credit/car-three.png'));
 		this.load.image('car-4', ('assets/images/credit/car-four.png'));
@@ -63,7 +62,7 @@ export class BootScene extends Phaser.Scene {
 		this.load.image('car-18', ('assets/images/credit/car-eighteen.png'));
 		this.load.image('car-19', ('assets/images/credit/car-nineteen.png'));
 		this.load.image('car-20', ('assets/images/credit/car-twenty.png'));
-		this.load.image('car-21', ('assets/images/credit/car-tweny-one.png'));
+		this.load.image('car-21', ('assets/images/credit/car-twenty-one.png'));
 		this.load.image('background', ('assets/images/menu/background.png'));
 		this.load.image('starsZero', ('assets/images/menu/stars-zero.png'));
 		this.load.image('starsOne', ('assets/images/menu/stars-one.png'));
@@ -86,7 +85,6 @@ export class BootScene extends Phaser.Scene {
 		this.load.image('soundOff', ('assets/images/menu/sound-off.png'));
 		this.load.image('dollar', ('assets/images/menu/dollar.png'));
 		this.load.image('brick', ('assets/images/game/brick.png'));
-		this.load.image('brickHorizontal', ('assets/images/game/brick-horizontal.png'));
 		this.load.audio('hurryUp', ('assets/audio/soundtrack/hurry-up.mp3'));
 		this.load.audio('menuClick', ('assets/audio/sounds/menu/menu-click.mp3'));
 		this.load.audio('menuLook', ('assets/audio/sounds/menu/menu-look.mp3'));

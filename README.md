@@ -1,58 +1,74 @@
-# CHRONO ADVENTURE - https://dendyy1945.itch.io/chrono-adventure
-Video Game that was created with phaser JS, HTML, CSS, Tiled. 
+# Phaser 3 Webpack Project Template
 
-# INSTALLATION
-Run command <i>npm install</i> to install all required dependencies.
+A Phaser 3 project template with ES6 support via [Babel 7](https://babeljs.io/) and [Webpack 5](https://webpack.js.org/) that includes hot-reloading for development and production-ready builds.
 
-# DEVELOPMENT 
-Run command <i>npm start</i> to run local webpack-dev-server with livereload and autocompile on localhost
+This has been updated for Phaser 3.60.0 version and above.
 
-# DEPLOYMENT
-Run command <i>npm run build</i> to build current application
+Loading images via JavaScript module `import` is also supported, although not recommended.
 
-# SPECIAL THANKS TO:
+![Screenshot](example.png)
 
-* PetricakeGames for tileset and spritesheet - https://petricakegames.itch.io/
+## Requirements
 
-* bl4ckbyrd for spritesheet - https://bl4ckbyrd.itch.io/ 
+[Node.js](https://nodejs.org) is required to install dependencies and run scripts via `npm`.
 
-* DyLESTorm for tileset - https://livingtheindie.itch.io/
+## Available Commands
 
-* Wenrexa for images - https://wenrexa.itch.io/
+| Command | Description |
+|---------|-------------|
+| `npm install` | Install project dependencies |
+| `npm start` | Build project and open web server running project |
+| `npm run build` | Builds code bundle with production settings (minification, uglification, etc..) into the `dist` folder |
 
-* enjl for images - https://enjl.itch.io/
+## Writing Code
 
-* FieraRyan for images - https://fieraryan.itch.io/
+After cloning the repo, run `npm install` from your project directory. Then, you can start the local development server by running `npm start`.
 
-* CRAFTPIX.NET for images - https://craftpix.net/freebies/free-city-backgrounds-pixel-art/?num=1&count=147&s...
+After starting the development server with `npm start`, you can edit any files in the `src` folder and webpack will automatically recompile and reload your server (available at `http://localhost:8080` by default).
 
-* noazudo for images and icons - https://noazudo.itch.io/
+## Handling Assets
 
-* VileR for font - https://fontesk.com/designer/viler/
+This template provides support for both embedding images and loading them from a static folder. To embed an image, you can import it at the top of the file you are using it in:
 
-* DavidKBD  for soundtrack - https://davidkbd.itch.io/
+```js
+import logoImg from './assets/logo.png'
+```
 
-* planarian BGM for soundtrack - https://itch.io/profile/planarian-bgm
+To load static files such as images, audio files, videos, etc place them into the `public/assets` folder. Then you can use this path in the Loader calls within Phaser:
 
-* TrevorLentz for soundtrack - https://itch.io/profile/trevorlentz
+```js
+    preload ()
+    {
+        //  This is an example of a bundled image:
+        this.load.image('logo', logoImg);
 
-* DOS88 for soundtrack - https://dos88.itch.io/
+        //  This is an example of loading a static image from the public folder:
+        this.load.image('background', 'assets/bg.jpg');
+    }
+```
 
-* Magic Eyes for soundtrack - https://magic-eyes.itch.io/
+When you do `npm run build` it will use the copy-webpack-plugin to copy the `public/assets` folder into `dist/assets`. Remember to include this folder when you deploy your game to a server.
 
-* Jim Hall for soundtrack - https://jhmakesgames.itch.io/ 
+## Customizing the Template
 
-* alkakrab for soundtrack - https://alkakrab.itch.io/
+### Babel
 
-* Chiphead64 for soundtrack - https://chiphead64.itch.io/
+You can write modern ES6+ JavaScript and Babel will transpile it to a version of JavaScript that you want your project to support. The targeted browsers are set in the `.babelrc` file and the default currently targets all browsers with total usage over "0.25%" but excludes IE11 and Opera Mini.
 
-* David Harris for soundtrack - https://david-harris.itch.io/
+ ```
+"browsers": [
+  ">0.25%",
+  "not ie 11",
+  "not op_mini all"
+]
+ ```
 
-* Matther Wilber for guide and sources available on github - https://github.com/mwilber
+### Webpack
 
-* Rusted Music Studio for soundtrack - https://rustedstudio.itch.io/
+If you want to customize your build, such as adding a new webpack loader or plugin (i.e. for loading CSS or fonts), you can modify the `webpack/base.js` file for cross-project changes, or you can modify and/or create new configuration files and target them in specific npm tasks inside of `package.json'.
 
-* robotmeadows for soundtrack- https://robotmeadows.itch.io/
+## Deploying Code
 
+After you run the `npm run build` command, your code will be built into a single bundle located at `dist/bundle.min.js` along with any other assets you project depended. 
 
-### <i>P. S. Please, support me - https://ko-fi.com/dendyy1945, subscribe, and give a star to this project if it was helpful for you</i>.
+If you put the contents of the `dist` folder in a publicly-accessible location (say something like `http://mycoolserver.com`), you should be able to open `http://mycoolserver.com/index.html` and play your game.

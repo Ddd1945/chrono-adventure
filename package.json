@@ -2,35 +2,38 @@
   "name": "chrono-adventure",
   "version": "1.1.0",
   "description": "Game About Smart And Agile Astronaut",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "build": "webpack --config webpack/prod.js ",
     "start": "webpack-dev-server --config webpack/base.js --open"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/photonstorm/phaser3-project-template.git"
+    "url": "git+https://github.com/Ddd1945/chrono-adventure.git"
   },
-  "author": "Ddd1945",
+  "author": "Denis Lyovin (DeNdyy) (https://github.com/Ddd1945)",
+  "license": "MIT",
+  "licenseUrl": "http://www.opensource.org/licenses/mit-license.php",
   "bugs": {
-    "url": "https://dendyy1945.itch.io/chrono-adventure"
+    "url": "https://github.com/Ddd1945/chrono-adventure/issues"
   },
-  "homepage": "https://dendyy1945.itch.io/chrono-adventure",
+  "homepage": "https://github.com/Ddd1945/chrono-adventure/blob/main/README.md",
   "devDependencies": {
-    "@babel/core": "^7.21.3",
-    "@babel/preset-env": "^7.20.2",
-    "babel-loader": "^8.3.0",
-    "clean-webpack-plugin": "^3.0.0",
-    "file-loader": "^4.3.0",
-    "html-webpack-plugin": "^3.2.0",
-    "raw-loader": "^3.1.0",
-    "terser-webpack-plugin": "^2.3.8",
-    "webpack": "^4.46.0",
-    "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.3",
-    "webpack-merge": "^4.2.2"
+    "@babel/core": "^7.23.2",
+    "@babel/preset-env": "^7.23.2",
+    "babel-loader": "^9.1.3",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.3",
+    "raw-loader": "^4.0.2",
+    "terser-webpack-plugin": "^5.3.9",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1",
+    "webpack-merge": "^5.10.0"
   },
   "dependencies": {
-    "phaser": "^3.55.2"
+    "phaser": "^3.70.0"
   }
 }
