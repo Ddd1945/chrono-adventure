@@ -1,4 +1,4 @@
-# CHRONO ADVENTURE - https://dendyy1945.itch.io/chrono-adventure
+# CHRONO ADVENTURE - https://ddd1945.github.io/chrono-adventure/
 Video Game that was created with phaser JS, HTML, CSS, Tiled. 
 
 # INSTALLATION
