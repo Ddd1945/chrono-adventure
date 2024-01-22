@@ -1,6 +1,20 @@
 # CHRONO ADVENTURE - https://ddd1945.github.io/chrono-adventure/
 Video Game that was created with phaser JS, HTML, CSS, Tiled. 
 
+# ABOUT THE GAME:
+
+The astronaut has been tasked with collecting data from an abandoned alien spaceship. He was sent there using highly advanced technology, which has one major drawback: it leaves a time-dimensional track behind the user. It's crucial to avoid bumping into the track, otherwise the hero will be sent back to the beginning of his mission.
+
+# HOW TO PLAY:
+
+Movements - <i>W, A, S, D, ↑, ←, ↓, →</i> 
+
+Acceleration -  <i>HOLD SPACE BUTTON WHILE MOVING</i>
+
+Main Menu - <i>M</i>
+
+Skip Dialog - <i>PRESS ANY BUTTON</i>
+
 # INSTALLATION
 Run command <i>npm install</i> to install all required dependencies.
 
